@@ -300,6 +300,7 @@
                 link: function (scope, elm/*, attrs*/) {
                     elm.addClass('os-' + deviceDetector.os);
                     elm.addClass('browser-' + deviceDetector.browser);
+                    if(deviceDetector.browser!=='chrome') elm.addClass('not-chrome');
                     elm.addClass('device-' + deviceDetector.device);
                 }
             };
